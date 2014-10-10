@@ -21,6 +21,7 @@ If you are not using a `Gemfile`, run:
 Use from Rails:
 
     config.logger = RemoteSyslogLogger.new('syslog.domain.com', 514, :program => "rails-#{RAILS_ENV}")
+    config.logger.level = Logger::INFO # ... or Logger::DEBUG (if development)
 
 Use from Ruby:
 
